@@ -1,0 +1,92 @@
+body{
+  background-color: #333;
+}
+.common {
+  max-width: 1200px;
+  margin: 0 30px;
+  color: #f2f2f2;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1 1 45%;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+}
+
+.button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+  color: #0a0404a4;
+}
+
+.button1:hover{
+  background-color: #ddd;
+}
+
+input[type="text"] {
+  width: 300px;
+  
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 0.1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f91a;
+}
+
+tr:hover {
+  background-color: #0a0404;
+}
+
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.button-group button {
+  margin-right: 10px;
+}
+
+.warning-text {
+  color: red;
+  margin-top: 10px;
+}
+

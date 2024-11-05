@@ -1,0 +1,98 @@
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.header:hover {
+  background-color: #e2e6ea; /* Change to a slightly darker color on hover */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease; /* Smooth transition for link color */
+  display: block; /* Make the link cover the entire nav-item */
+  padding: 10px; /* Add padding to increase clickable area */
+}
+
+.nav-item a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.login {
+  position: relative;
+  margin-right: 20px;
+}
+
+.login.doctor-logged-in {
+  margin-right: 0;
+}
+
+.user-profile {
+  cursor: pointer;
+  color: #343a40;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.user-profile:hover {
+  color: #007bff; /* Change text color on hover */
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 80px;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 12px 15px;
+  font-size: 13px;
+  color: #dc3545;
+  text-align: center;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.dropdown-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Make the link cover the entire dropdown-item */
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}

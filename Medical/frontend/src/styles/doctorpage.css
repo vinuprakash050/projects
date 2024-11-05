@@ -1,0 +1,70 @@
+.doctor-interface {
+    padding: 20px;
+    max-width: 600px;
+    min-height: 80vh;
+    margin: auto;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2.5em; /* Larger font size */
+    margin-bottom: 10px; /* Space below */
+}
+p{
+    text-align: center;
+}
+
+h2 {
+    color: #007bff;
+    margin-top: 20px;
+    font-size: 1.8em; /* Slightly larger for emphasis */
+}
+
+.appointments, .notifications {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.appointment-item, .notification-item {
+    background-color: #fff;
+    padding: 15px; /* Increased padding for better touch targets */
+    margin: 5px 0;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.appointment-item:hover, .notification-item:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.appointment-item strong {
+    color: #333;
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.notification-item {
+    color: #d9534f; /* Bootstrap danger color */
+    font-weight: bold; /* Bold for visibility */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .doctor-interface {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust font size */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust font size */
+    }
+}

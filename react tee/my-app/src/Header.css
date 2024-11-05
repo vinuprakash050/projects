@@ -1,0 +1,121 @@
+.header {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 1000;
+    position: relative; /* Ensure the header stays at the top */
+    top: 0;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  .header:hover,
+  .header-search-open {
+    background-color: #333; /* Solid color on hover and when search bar is open */
+  }
+  
+  .header-left a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove the underline */
+  }
+  
+  .header-left a:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+    color: inherit; /* Ensure the color remains the same on hover */
+  }
+  
+  .header-left h1 {
+    margin: 0;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .header-left:hover h1 {
+    transform: scale(1.1); /* Slightly enlarge the text on hover */
+  }
+  
+  .header-center nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .header-center a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .header-center a:hover {
+    color: #e91e63; /* Change color on hover */
+    transform: translateY(-2px); /* Slightly move up on hover */
+  }
+  
+  .header-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .header-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .header-item:hover {
+    transform: scale(1.1); /* Slightly enlarge the item on hover */
+  }
+  
+  .header-item img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  }
+  
+  .header-product-details {
+    background-color: #333; /* Color for product details page */
+    color: #ffffff; /* Text color for better contrast */
+  }
+  
+  .search-bar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 98.5%;
+    background-color: #333; /* Set the background color for the search bar */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .search-bar .search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #333; /* Match the background color of the input with the search bar */
+    color: #fff; /* Set the text color to white for better contrast */
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline when the input is focused */
+    border-radius: 0; /* Remove any border radius */
+  }
+  
+  .close-search {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  

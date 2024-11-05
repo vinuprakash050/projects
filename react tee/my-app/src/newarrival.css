@@ -1,0 +1,46 @@
+.new-arrival {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .new-arrival h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+  }
+  
+  .product-card {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product-card .price {
+    font-size: 1.2em;
+    color: #e91e63;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 45px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Change to column to stack label and input vertically */
+    gap: 5px; /* Space between label/input and error message */
+}
+
+label {
+    color: #555;
+}
+
+.error {
+    color: red; /* Red color for error messages */
+    font-size: 0.9em; /* Slightly smaller font size */
+    margin-top: 5px; /* Space above the error message */
+    align-self: flex-start; /* Align error message to the start */
+}
+
+input, select {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.time-slot {
+    padding: 10px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.time-slot.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.time-slot.booked {
+    background-color: #f0f0f0; /* Light gray for booked slots */
+    color: #999; /* Gray text for booked slots */
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.pricing-options {
+    display: flex;
+    flex-direction: column; /* Stack pricing options vertically */
+}
+
+.pricing-option {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    margin: 5px 0; /* Space between options */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.pricing-option:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+}
+
+.pricing-option.selected {
+    background-color: #007bff; /* Highlight selected option */
+    color: white; /* White text for selected */
+}
+
+.doctor-details {
+    background-color: #f9f9f9; /* Light background for doctor details */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-top: 20px; /* Space above the doctor details */
+    text-align: left; /* Ensure text is left-aligned */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.doctor-details h3 {
+    margin-top: 0; /* Remove top margin */
+    font-size: 22px; /* Slightly larger font size */
+    color: #333; /* Darker color for heading */
+    text-align: left; /* Ensure heading is left-aligned */
+    border-bottom: 1px solid #ddd; /* Add a bottom border */
+    padding-bottom: 10px; /* Space below the heading */
+}
+
+.doctor-details p {
+    margin: 10px 0; /* Space between paragraphs */
+    color: #555; /* Slightly lighter color for text */
+    text-align: left; /* Ensure paragraphs are left-aligned */
+    line-height: 1.6; /* Improve readability */
+}
+
+.doctor-details p strong {
+    color: #333; /* Darker color for strong text */
+}
